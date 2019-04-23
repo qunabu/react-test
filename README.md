@@ -1,6 +1,6 @@
 ### React Front-End Interview Test
 
-Please read this document for the full test description with screenshots.
+Please fully read the description below and see the included screenshots.
 
 #### Introduction
 
