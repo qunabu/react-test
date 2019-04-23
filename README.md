@@ -38,8 +38,8 @@ Please use the data.json file - static dataset for the test in json format.     
 
 #### Screenshots of example screens 
 
-![Screen Shot 2019-04-23 at 16.22.12]
+![Screen Shot 2019-04-23 at 16.22.12](https://raw.githubusercontent.com/dariuszwiktorek/react-test/master/Screen%20Shot%202019-04-23%20at%2016.22.12.png)
 
-![Screen Shot 2019-04-23 at 16.22.17.png](Screen Shot 2019-04-23 at 16.22.17.png)
+![Screen Shot 2019-04-23 at 16.22.17.png](https://raw.githubusercontent.com/dariuszwiktorek/react-test/master/Screen%20Shot%202019-04-23%20at%2016.22.17.png)
 
 *(You’re free to use any iconset you like, these are here just an example for expand/collapse icons)*
