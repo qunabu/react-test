@@ -11,7 +11,7 @@ In this test your task is to display a list of music albums and songs, using Rea
 * Test data: in the data.json file we provide a static list of songs.
 * Each song in the list has 3 attributes: band, album, song
 * We expect to see a list of bands and albums with in an expandable/collapsible panel for the
-  songs within the given album (see screenshots on page 2):
+  songs within the given album (see screenshots below):
     * The expand/collapse button on the individual albums should expand/collapse the list of songs
     * The expand/collapse button on the main Albums title should expand/collapse all the albums
 * The main technologies you are expected to use
