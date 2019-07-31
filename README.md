@@ -18,8 +18,8 @@ In this test your task is to display a list of music albums and songs, using Rea
     * Choice of ajax: to get the list of songs from the server
     * Redux: to store the data
     * React: to display the list
-* The supported browsers are: IE11, Firefox, Chrome, the solution expected to work on these.
-  (note: only IE11, no backward compatibility with earlier IE is expected)
+* The supported browsers are: **IE11**, Firefox, Chrome, the solution expected to work on these.
+  (note: **only IE11**, no backward compatibility with earlier IE is expected)
 
 Please use the data.json file - static dataset for the test in json format.       |
 
