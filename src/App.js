@@ -8,6 +8,7 @@ import "./App.css";
  * TODO
  * > tests
  * > browsers, IE 11 
+ * > errors handling
  */
 
 function App(props) {
