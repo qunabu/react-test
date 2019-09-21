@@ -1,0 +1,15 @@
+li.album {
+    margin: 10px 5px;
+    counter-reset: album;  
+    border-bottom:1px solid #999;
+}
+
+li.album > ul {
+    margin: 10px;
+}
+
+li.album > ul > li::before {
+    counter-increment: album;               
+    content: "" counter(album) ": ";     
+    color:#999;
+  }
