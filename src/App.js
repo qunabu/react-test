@@ -7,7 +7,7 @@ import "./App.css";
 /**
  * TODO
  * > tests
- *
+ * > browsers, IE 11 
  */
 
 function App(props) {
