@@ -5,10 +5,12 @@ import Album from "./components/Album";
 import "./App.css";
 
 /**
- * TODO
- * > tests
- * > browsers, IE 11 
- * > errors handling
+ * The App is using 
+ * - redux for storing the global data, album songs 
+ * - state for open keys of the albums 
+ * 
+ * It could use redux for open keys as well, 
+ * but I've decided that this is local state
  */
 
 function App(props) {
@@ -32,17 +34,24 @@ function App(props) {
     setOpenAlbums(
       openAlbums.length === data.albums.length
         ? []
-        : data.albums.map((r,i) => i)
+        : data.albums.map((r, i) => i)
     );
   };
-
 
   useEffect(() => {
     dispatch(fetchAlbums());
   }, [dispatch]);
 
   if (data.loading) {
-    return <main className="loading">loading...</main>
+    return <main className="loading">loading...</main>;
+  }
+
+  if (data.error) {
+    return (
+      <main className="error">
+        <h2>Error</h2> <pre>{JSON.stringify(data.error)}</pre>
+      </main>
+    );
   }
 
   return (

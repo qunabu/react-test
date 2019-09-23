@@ -20,6 +20,8 @@
   },
   "homepage": "https://qunabu.github.io/react-test",
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
     "gh-pages": "^2.1.1"
   }
 }

@@ -22,16 +22,31 @@ export function requestAlbumsError(error) {
   };
 }
 
-export function fetchAlbums() {
-   return function(dispatch) {
+export function fetchAlbums(url = "data.json") {
+  return function(dispatch) {
     dispatch(requestAlbums());
-   return fetch('data.json')
-      .then(
-        response => response.json(),
-        error => dispatch(requestAlbumsError(error))
-      )
-      .then(json =>
-        dispatch(requestAlbumsSuccess(json))
-      );
+    let f;
+    try {
+      f = fetch(url)
+        .then(
+          response =>
+            response &&
+            response.headers &&
+            response.headers.get("content-type").includes("application/json")
+              ? response.json()
+              : { error: "response is not a json" },
+          error => dispatch(requestAlbumsError(error))
+        )
+        .then(json =>
+          json.error
+            ? dispatch(requestAlbumsError(json))
+            : dispatch(requestAlbumsSuccess(json))
+        );
+    } catch (error) {
+      console.log("errr", error);
+      dispatch(requestAlbumsError(error));
+    }
+
+    return f;
   };
 }

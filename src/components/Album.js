@@ -9,7 +9,7 @@ function Album(props) {
       {props.opened && (
         <ul>
           {props.data.songs.map(song => (
-            <li key={song}>{song}</li>
+            <li className="song" key={song}>{song}</li>
           ))}
         </ul>
       )}

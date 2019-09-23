@@ -1,6 +1,6 @@
 import * as ACTIONS from "./actions";
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   loading: false,
   error: null,
   albums: []
